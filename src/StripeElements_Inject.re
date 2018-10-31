@@ -7,14 +7,21 @@ type createTokenArgs = {. "name": string};
 
 type createSourceArgs('a) = {.. "type": string} as 'a;
 
+type errorType = {
+  code: string,
+  _type: string,
+  message: string,
+};
+
+type tokenType = {. "id": string};
 [@bs.deriving abstract]
 type stripe;
 [@bs.deriving abstract]
 type createTokenResponse = {
   [@bs.optional]
-  token: string,
+  token: tokenType,
   [@bs.optional]
-  error: string,
+  error: errorType,
 };
 [@bs.send]
 external createToken:
