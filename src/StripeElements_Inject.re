@@ -10,7 +10,12 @@ type createSourceArgs('a) = {.. "type": string} as 'a;
 [@bs.deriving abstract]
 type stripe;
 [@bs.deriving abstract]
-type createTokenResponse = {token: string};
+type createTokenResponse = {
+  [@bs.optional]
+  token: string,
+  [@bs.optional]
+  error: string,
+};
 [@bs.send]
 external createToken:
   (stripe, option(createTokenArgs)) => Js.Promise.t(createTokenResponse) =
