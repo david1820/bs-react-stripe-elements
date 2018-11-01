@@ -7,13 +7,16 @@ type createTokenArgs = {. "name": string};
 
 type createSourceArgs('a) = {.. "type": string} as 'a;
 
+[@bs.deriving abstract]
 type errorType = {
   code: string,
-  _type: string,
+  type_: string,
   message: string,
 };
 
-type tokenType = {. "id": string};
+[@bs.deriving abstract]
+type tokenType = {id: string};
+
 [@bs.deriving abstract]
 type stripe;
 [@bs.deriving abstract]
