@@ -48,16 +48,19 @@ let makeInvalid = (~color=?, ~iconColor=?, ()) =>
 let makeStyle = (~base=?, ~invalid=?, ()) => style(~base, ~invalid);
 
 [@bs.deriving abstract]
-type jsProps = {style: option(style)};
+type jsProps = {
+  style: option(style),
+  hidePostalCode: bool,
+};
 
 let component = ReasonReact.statelessComponent("CardElement");
 
-let make = (~style: option(style)=?, _children) =>
+let make = (~style: option(style)=?, ~hidePostalCode=false, _children) =>
   ReasonReact.wrapJsForReason(
     ~reactClass=
       StripeElements_Components.cardElementGet(
         StripeElements_Components.default,
       ),
-    ~props=jsProps(~style),
+    ~props=jsProps(~style, ~hidePostalCode),
     (),
   );
