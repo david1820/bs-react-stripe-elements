@@ -3,7 +3,16 @@ type hoc = ReasonReact.reactClass => ReasonReact.reactClass;
 [@bs.module "react-stripe-elements/lib/components/inject"]
 external inject: hoc = "default";
 
-type createTokenArgs = {. "name": string};
+type createTokenArgs = {
+  .
+  "name": string,
+  "address_line1": option(string),
+  "address_line2": option(string),
+  "address_city": option(string),
+  "address_state": option(string),
+  "address_zip": option(string),
+  "address_country": option(string)
+};
 
 type createSourceArgs('a) = {.. "type": string} as 'a;
 
