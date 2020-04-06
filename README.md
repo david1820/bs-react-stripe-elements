@@ -4,14 +4,14 @@
 
 Minimal, hand-generated BuckleScript + ReasonReact bindings for [react-stripe-elements](https://github.com/stripe/react-stripe-elements). The bindings are vanilla, which means it'll mostly be 1-to-1 bindings. However, the bindings will help you out by for example removing stringly-typed code wherever possible.
 
-**State**: *experimental, but active. unpublished and requires polishing*
+**State**: _experimental, but active. unpublished and requires polishing_
 
 ## Examples / Demo
 
 ### Main Demo
 
-* [Demo Site](https://bs-react-stripe-elements.surge.sh)
-  * [Code for Demo Site](https://github.com/cnguy/bs-react-stripe-elements/blob/master/examples/Checkout)
+- [Demo Site](https://bs-react-stripe-elements.surge.sh)
+  - [Code for Demo Site](https://github.com/cnguy/bs-react-stripe-elements/blob/master/examples/Checkout)
 
 Note that these examples are not runnable. You would have to copy the files to your own React app to test them. For testing the bindings, I just constantly `yarn add <path-to-local-directory-of-bs-stripe-react-elements>` within a different web app to get the updated changes.
 
@@ -21,7 +21,6 @@ This demo ideally will match [Stripe's own basic demo](https://github.com/stripe
 
 TBD. I will add specific component usage (styling a CardElement for example).
 
-
 ## Installation
 
 ### 1
@@ -29,17 +28,17 @@ TBD. I will add specific component usage (styling a CardElement for example).
 Since the package is currently unpublished, we do not use `npm`. Instead,
 we rely on the `master` branch.
 
-* With `yarn`
+- With `yarn`
 
-```yarn add cnguy/bs-react-stripe-elements#master```
+`yarn add cnguy/bs-react-stripe-elements#master`
 
-* With `npm`
+- With `npm`
 
-```npm install --save cnguy/bs-react-stripe-elements#master```
+`npm install --save cnguy/bs-react-stripe-elements#master`
 
 ### 2
 
-Add `@cnguy/bs-react-stripe-elements` to `bsconfig.json` `bs-dependencies`.
+Add `@tailrecursive/bs-react-stripe-elements` to `bsconfig.json` `bs-dependencies`.
 
 ### 3
 
@@ -47,12 +46,12 @@ Add `Stripe.js` to your `index.html` file as well. Put it before your app's JS b
 
 ```html
 <html>
-<head />
-<body>
-  <div id="root" />
-  <script src="https://js.stripe.com/v3/"></script>
-  <script src="bundle.js"></script>
-</body>
+  <head />
+  <body>
+    <div id="root" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="bundle.js"></script>
+  </body>
 </html>
 ```
 

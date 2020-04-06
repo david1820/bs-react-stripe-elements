@@ -1,5 +1,5 @@
 {
-  "name": "@cnguy/bs-react-stripe-elements",
+  "name": "@tailrecursive/bs-react-stripe-elements",
   "bsc-flags": [
     "-bs-no-version-header",
     "-bs-super-errors"
