@@ -1,6 +1,6 @@
 {
-  "name": "@cnguy/bs-react-stripe-elements",
-  "version": "0.0.1",
+  "name": "@tailrecursive/bs-react-stripe-elements",
+  "version": "0.0.2",
   "description": "Bindings for Stripe's react-stripe-elements",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cnguy/bs-react-stripe-elements.git"
+    "url": "git+https://github.com/david1820/bs-react-stripe-elements"
   },
   "keywords": [
     "bucklescript",
@@ -21,9 +21,9 @@
   "author": "cnguy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cnguy/bs-react-stripe-elements/issues"
+    "url": "https://github.com/david1820/bs-react-stripe-elements"
   },
-  "homepage": "https://github.com/cnguy/bs-react-stripe-elements#readme",
+  "homepage": "https://github.com/david1820/bs-react-stripe-elements#readme",
   "files": [
     "bsconfig.json"
   ],
