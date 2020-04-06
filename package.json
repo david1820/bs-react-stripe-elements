@@ -1,6 +1,6 @@
 {
   "name": "@tailrecursive/bs-react-stripe-elements",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Bindings for Stripe's react-stripe-elements",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/david1820/bs-react-stripe-elements#readme",
   "files": [
-    "bsconfig.json"
+    "/src",
+    "/bsconfig.json"
   ],
   "devDependencies": {
     "bs-platform": "^4.0.5"
